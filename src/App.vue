@@ -1,16 +1,15 @@
 <template>
   <div>
-    <the-header></the-header>
+    <theHeader />
+    <theNavigation />
+    <theBusket />
   </div>
 </template>
 
-<script>
+<script setup>
 import theHeader from "./components/theHeader.vue";
-
-export default {
-  components: { theHeader },
-};
+import theNavigation from "./components/TheNavigation.vue";
+import theBusket from "./components/TheBusket.vue";
 </script>
 
-<style>
-</style>
+<style></style>
