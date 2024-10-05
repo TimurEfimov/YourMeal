@@ -2,7 +2,10 @@
   <div>
     <theHeader />
     <theNavigation />
-    <theBusket />
+    <div class="main__things">
+      <theBusket />
+      <theFood />
+    </div>
   </div>
 </template>
 
@@ -10,6 +13,11 @@
 import theHeader from "./components/theHeader.vue";
 import theNavigation from "./components/TheNavigation.vue";
 import theBusket from "./components/TheBusket.vue";
+import TheFood from "./components/TheFood.vue";
 </script>
 
-<style></style>
+<style>
+.main__things {
+  display: flex;
+}
+</style>

@@ -62,15 +62,18 @@ let navigation = [
 
 <style scoped>
 nav {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 40px;
+  margin: 40px 50px 50px 50px;
 }
 ul {
   display: flex;
   overflow-x: scroll;
   justify-content: space-around;
 }
+
+ul::-webkit-scrollbar {
+  display: none;
+}
+
 li {
   display: flex;
   align-items: center;
@@ -79,9 +82,14 @@ li {
   border-radius: 50px;
   transition: 0.3s;
   border: solid 1px #fff;
+  white-space: nowrap;
 }
 img {
   margin-right: 8px;
+}
+
+.active {
+  background-color: #FFAB08;
 }
 
 li:hover {

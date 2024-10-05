@@ -30,7 +30,9 @@
 </template>
 
 <script setup>
-let count = 0;
+import { ref } from "vue";
+
+let count = ref(0);
 </script>
 
 <style scoped>
@@ -66,7 +68,8 @@ let count = 0;
 
 .busket__product {
   display: flex;
-  padding-top: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f2f2f3;
 }
 
 .product__img {
@@ -98,11 +101,9 @@ let count = 0;
   max-width: 84px;
   height: 40px;
   margin-left: 31px;
-  border-bottom: 1px solid #f2f2f3;
 }
 
 .minus {
-  border: none;
   padding-left: 9px;
 }
 
@@ -112,7 +113,6 @@ let count = 0;
 }
 
 .plus {
-  border: none;
   padding-right: 9px;
 }
 
@@ -137,6 +137,11 @@ let count = 0;
   border-radius: 12px;
   color: #fff;
   font-size: 15px;
+  transition: 0.3s;
+}
+
+.submit__order:hover {
+  background-color: #ffab08;
 }
 
 .busket__delivery {

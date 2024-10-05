@@ -130,6 +130,12 @@ table {
 a {
   text-decoration: none;
   font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
 }
 
 * {
